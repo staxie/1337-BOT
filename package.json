@@ -1,0 +1,23 @@
+{
+  "name": "1337-bot",
+  "version": "1.0.0",
+  "description": "A simple Discord Bot to play around with",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staxie/1337-BOT.git"
+  },
+  "author": "Robin Nowak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/staxie/1337-BOT/issues"
+  },
+  "homepage": "https://github.com/staxie/1337-BOT#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "node-cron": "^2.0.3"
+  }
+}
