@@ -1,32 +1,35 @@
 const Discord = require('discord.js')
-const Cron = require('node-cron')
+const _ = require('lodash')
 
-const client = new Discord.Client()
+const farewells = require('../assets/farewells.json')
 
 commands = {
-    ping: "ping",
-    gg: "gg",
-    bye: "bye"  
+    "!ping": (message) => message.channel.send('Pong.'),
+    "!gg": (message) => message.channel.send('ez u suckers'),
+    "!bye": (message) => message.channel.send(handleFarewell(message))
 }
 
 const commandEntries = Object.entries(commands)
 
-async function checkingForCommand(message) {
-    client.on("message", message => {
-        console.log(message)
-        console.log(commandEntries)
-        const result = 'test'
-    })
-    return
+function handleMessage(message) {
+    for (const [ command, action ] of commandEntries) {
+        if(message.content.startsWith(command)) {
+            action(message)
+        }
+    }
 }
 
-async function respondingToCommand(message) {
+// TODO @Username       -- An Client.Users hängen alle User die auf dem Discord angemeldet sind mit username und Id --> ID wird zum @'en benötigt
+function handleFarewell(message) {
+    const userToFarewell = message.content.substr(5, message.content.length)
+    const randomNumber = _.random(0, farewells.length)
+    const farewell = farewells[randomNumber]
+    const farewellWithName = farewell + ' ' + userToFarewell
 
-    return
+    console.log(userToFarewell)
+    return farewellWithName
 }
-
 
 module.exports =  {
-    commands: this.commands,
-    checkingForCommand: checkingForCommand
+    handleMessage
 }
