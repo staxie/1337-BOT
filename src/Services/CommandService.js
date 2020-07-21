@@ -15,7 +15,7 @@ async function checkingForCommand(message) {
     client.on("message", message => {
         console.log(message)
         console.log(commandEntries)
-        const result = ''
+        const result = 'test'
     })
     return
 }
