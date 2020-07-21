@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 
 // import own files
 const config = require("./config")
-const command = require("./src/commands")
+const command = require("./src/Services/CommandService")
 
 // create a new Discord client
 const client = new Discord.Client()
