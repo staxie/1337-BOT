@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const { now } = require('lodash')
 
 const config = require("./config")
 const command = require("./src/Services/CommandService")
