@@ -1,5 +1,6 @@
 Kladde:
 
-13:37Uhr
-MTG Top 10 Decks + Decklists
-!commandlist
+Python Skript für LeetTime!!!!!!
+MTG Commander Decklist { !Commander Korvold, Fae Cursed King }
+    --> Gibt einem aktuellsten Decklisten von MTGGoldfish.com 
+        in verschiedenen Preissegmenten zurück.
