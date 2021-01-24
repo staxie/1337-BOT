@@ -6,7 +6,8 @@ commands = {
     "!gg": (message) => message.channel.send('ez u suckers'),
     "!bye": (message) => message.channel.send(FarewellService(message)),
     "!rushb": (message) => message.channel.send("rush B blyat       no stop idiot!"),
-    "!1337": (message) => message.channel.send("<a:partydinosaur:725999098930659329>")
+    "!1337": (message) => message.channel.send("<a:partydinosaur:725999098930659329>"),
+    "!1338": (message) => message.channel.send("<:angrypepe:781171414655827968>")
 }
 
 const commandEntries = Object.entries(commands)
