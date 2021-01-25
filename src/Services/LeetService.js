@@ -1,6 +1,10 @@
 const Discord = require('discord.js')
-const Cron = require('cron')
+const Cron = require('node-cron')
 
+
+
+
+/* 
 console.log((Date.now() % 86400000 / 1000 / 60 / 60 -16) * 60)
 
 function getCurrentTime() {
@@ -9,3 +13,4 @@ function getCurrentTime() {
 
     return time
 }
+ */
